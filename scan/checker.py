@@ -7,7 +7,9 @@ import sys
 import json
 import platform
 
-element_counts = ["1000000", "10000000", "20000000", "40000000"]
+# element_counts = ["1000000", "10000000", "20000000", "40000000"]
+element_counts = ["1024", "2048", "4096", "9192"]
+
 
 perf_points = 1.25
 

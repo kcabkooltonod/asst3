@@ -1,0 +1,29 @@
+[
+    {
+        "arguments": [
+            "g++",
+            "-c",
+            "-m64",
+            "-O3",
+            "-Wall",
+            "-o",
+            "objs/main.o",
+            "main.cpp"
+        ],
+        "directory": "/home/yuanquan/asst3/scan",
+        "file": "main.cpp"
+    },
+    {
+        "arguments": [
+            "nvcc",
+            "-c",
+            "-O3",
+            "-m64",
+            "-o",
+            "objs/scan.o",
+            "scan.cu"
+        ],
+        "directory": "/home/yuanquan/asst3/scan",
+        "file": "scan.cu"
+    }
+]

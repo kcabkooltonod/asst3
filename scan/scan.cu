@@ -244,7 +244,7 @@ int find_repeats(int* device_input, int length, int* device_output, int* prefix_
     kernel_cmp<<<gridSize, THREADS_PER_BLOCK>>>(device_input, device_input, length);
     kernel_collect<<<gridSize, THREADS_PER_BLOCK>>>(prefix_sum, device_input, device_output, length);
     cudaDeviceSynchronize();
-
+ 
     int *repeats_num = new int;
     cudaMemcpy(repeats_num, prefix_sum +length - 1, sizeof(int), cudaMemcpyDeviceToHost);
     cudaMemcpy(temp, prefix_sum, sizeof(int) * length, cudaMemcpyDeviceToHost);
